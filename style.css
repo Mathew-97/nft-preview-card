@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue: hsl(216, 50%, 16%);
+    --blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.sub {
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+}
+
+.img-top {
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.img-top img {
+    width: 100%;
+    display: block;
+}
+
+.img-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: none;
+}
+
+.img-icon img {
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.img-top:hover .img-icon {
+    display: block;
+}
+
+.info a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+    font-size: 21px;
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.info a:hover {
+   color: hsla(178, 100%, 50%);
+}
+
+p {
+    color: hsl(215, 51%, 70%);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:25px 0;
+}
+
+.sub-flex, .days {
+    display: flex;
+    align-items: center;
+}
+.sub-flex p {
+    color: hsla(178, 100%, 50%);
+    font-weight: 600;
+    padding-left: 7px;
+}
+
+.days p {
+    padding-left: 7px;
+}
+
+hr {
+    border-color: hsl(215, 32%, 27%);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding-top:20  px;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-right: 16px;
+}
+
+.user p a.name {
+    color: #fff !important;
+    font-size: 16px !important;
+}
+
+.user p a.name:hover {
+    color: hsla(178, 100%, 50%) !important;
+}
